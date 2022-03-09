@@ -1,14 +1,13 @@
+import 'dart:html';
 import 'dart:io';
 
-void main() {
-  List filmes = <String>[
-    'circulo de fogo',
-    'até o ultimo homem',
-    'corrações de ferro',
-    'transfomes '
-  ];
-  filmes.insert(1, 'lagoa azul');
-  print(filmes);
-  print(filmes.length);
-  
+void main() { 
+  print(dolar);
+}
+
+void dolar() {
+  print("digite o valor para convertermos em dolar");
+  double real = double.parse(stdin.readLineSync()!);
+  double res = (real / 5.00);
+  print(res);
 }

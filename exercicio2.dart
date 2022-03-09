@@ -1,8 +1,16 @@
 import 'dart:io';
 
 void main() {
-  List listaDeNomes = ["luis", "anna"];
-  print("digite 0 para luis e digite 1 pare anna");
+  maior();
+}
+
+void maior() {
+  print("digite dois numeros inteiros");
   int n1 = int.parse(stdin.readLineSync()!);
-  print(listaDeNomes[n1]);
+  int n2 = int.parse(stdin.readLineSync()!);
+  if (n1 >= n2) {
+    print("O segundo numero é o maior");
+  } else if (n1 <= n2) {
+    print("o primero numero é maior que o segundo");
+  }
 }

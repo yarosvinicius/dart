@@ -1,10 +1,12 @@
 import 'dart:io';
 
 void main() {
-  List aprovados = ["Rafael", "kayique", "nicolas", "vinicius", "luis"];
-  for (var indice = 0; indice < aprovados.length; indice++) {
-    var mensagem = "boas vindas, ${aprovados[indice]}";
-    print(mensagem);
-  }
-  ;
+  conversao();
+}
+
+void conversao() {
+  print("digite um nuemero em graus para f");
+  int graus = int.parse(stdin.readLineSync()!);
+  double res = graus * 1.8 + 32;
+  print(res);
 }

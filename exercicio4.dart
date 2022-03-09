@@ -1,21 +1,16 @@
 import 'dart:io';
 
 void main() {
-  print("digite o nome da fruta");
-  String fruta = stdin.readLineSync()!;
+  print(arrays());
+}
 
-  switch (fruta) {
-    case "morango":
-      print("voce escolheu morango");
-      break;
-    case "malancia":
-      print("voce escolheu malencia");
-      break;
-    case "banana":
-      print("voce escolheu banana");
-      break;
-     default:
-      print("não tem essa");
-      break;
+int arrays() {
+  var listaDeNumeros = [10, 200, 30, 50];
+
+  var soma = 0;
+
+  for (var indice = 0; indice < listaDeNumeros.length; indice++) {
+    soma += listaDeNumeros[indice];
   }
+  return soma;
 }
